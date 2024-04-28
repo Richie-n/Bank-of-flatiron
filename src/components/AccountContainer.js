@@ -9,7 +9,7 @@ function AccountContainer() {
 const [transactionsEvent, setTransactionsEvent] = useState([])
 const [searchEvent, setSearchEvent] = useState("")
 
-useEffect(() => {fetch("http://localhost:8001/transactions").then(response => response.json()).then((data) => setTransactionsEvent(data));
+useEffect(() => {fetch("https://bank-of-flatiron-m53s.onrender.com/transactions").then(response => response.json()).then((data) => setTransactionsEvent(data));
 }, [])
 
 
